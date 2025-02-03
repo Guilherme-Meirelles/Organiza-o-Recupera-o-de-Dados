@@ -1,0 +1,15 @@
+a = int(input('1° Digite um número inteiro '))
+b = int(input('2° Digite um número inteiro '))
+c = int(input('3° Digite um número inteiro '))
+d = int(input('4° Digite um número inteiro '))
+e = int(input('5° Digite um número inteiro '))
+f = int(input('6° Digite um número inteiro '))
+g = int(input('7° Digite um número inteiro '))
+h = int(input('8° Digite um número inteiro '))
+i = int(input('9° Digite um número inteiro '))
+j = int(input('10° Digite um número inteiro '))
+arq =input("Digite o nome do arquivo que você quer abrir: ")
+lista = [a,b,c,d,e,f,g,h,i,j]
+new_arq = open(arq, 'wb')
+for c in lista:
+    new_arq.write(c.to_bytes(4))
